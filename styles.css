@@ -1,229 +1,165 @@
-/* BODY */
+/* Clearfix para limpiar después de los elementos flotantes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilos generales */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('./img/fondo.jpg') no-repeat center center fixed;
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla sin distorsión */
-    background-color: rgb(30, 30, 30); /* Color de fondo de respaldo */
-    color: rgb(255, 255, 255); /* Texto blanco */
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Tamaño de fuente base, importante para rem */
 }
 
-/* BORDES */
-header, nav, main, footer {
-    padding: 0.8rem;
-    border-bottom: 1px solid rgb(68, 68, 68); /* Bordes */
-}
-
-/* HEADER */
+/* Header */
 header {
-    background: rgb(17, 17, 17); /* Fondo oscuro */
-    color: rgb(255, 255, 255); /* Texto blanco */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 0.125rem solid rgb(85, 85, 85); /* Borde inferior más grueso */
+    background-color: #343a40; /* Fondo oscuro */
+    padding: 0.625rem 0; /* 10px -> 0.625rem */
 }
+
 header img {
-    height: 7rem; /* Tamaño aumentado del logo */
-    margin-right: 2rem;
+    height: 4.375rem; /* 70px -> 4.375rem */
+    width: auto; /* Mantiene la proporción del logo */
 }
 
-/* NAV */
-nav {
-    background: rgb(34, 34, 34); /* Fondo oscuro */
-    color: rgb(255, 255, 255); /* Texto blanco */
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 0.0625rem solid rgb(51, 51, 51); /* Borde inferior */
-}
-nav a {
-    color: rgb(255, 255, 255); /* Texto blanco */
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-nav a:hover {
-    background: rgb(68, 68, 68); /* Fondo gris oscuro al pasar el ratón */
-    border-radius: 0.3125rem; /* Bordes redondeados */
+header div {
+    color: white;
 }
 
-/* MAIN */
-main {
-    flex: 1;
-    display: flex;
-}
-
-/* ASIDE */
-aside {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    background: rgb(221, 221, 221); /* Fondo gris claro */
-    color: rgb(51, 51, 51); /* Texto gris oscuro */
-    width: 12.5rem !important; /* Ancho fijo para el aside */
-    border-right: 0.0625rem solid rgb(51, 51, 51); /* Borde derecho */
-    padding: 0; /* Elimina padding innecesario */
-}
-aside.image-slider {
-    width: 100%; /* Ajusta el ancho del carrusel al ancho del aside */
-    height: 12.5rem; /* Ajusta la altura del carrusel */
-    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
-    position: relative;
-}
-aside .slides {
-    display: flex;
-    width: 100%; /* Ancho total del contenedor para todas las imágenes (100% * número de imágenes) */
-    transition: transform 0.5s ease-in-out; /* transición entre imágenes */
-}
-aside .slides img {
-    width: 100%; /* Asegura que cada imagen ocupe el 100% del contenedor */
-    height: 100%; /* Ajusta la altura de la imagen al contenedor */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
-    display: block; /* Evita el espacio blanco debajo de las imágenes */
-}
-
-/* SECTION */
-section {
-    flex: 1;
-    padding: 1rem;
-    background-color: rgb(30, 30, 30); /* Fondo gris oscuro */
-    color: rgb(204, 204, 204); /* Texto gris claro */
-    border-left: 0.0625rem solid rgb(51, 51, 51); /* Borde izquierdo */
-}
-
-/* FOOTER */
-footer {
-    background: rgb(17, 17, 17); /* Fondo oscuro */
-    color: rgb(255, 255, 255); /* Texto blanco */
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Alinea los items verticalmente en el centro */
-    position: relative;
-    border-top: 0.125rem solid rgb(85, 85, 85); /* Borde superior más grueso */
-    padding: 0.625rem; /* Añade padding para separar el contenido del borde */
-}
-footer img {
-    height: 100%; /* Ocupa el alto total del footer */
-    width: auto; /* Mantiene la proporción de la imagen */
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-footer .footer-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 6.25rem; /* Para dar espacio a la imagen (100px) */
-}
-
-/* HTML SERVICIOS */
-.service {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
-    margin-bottom: 1.25rem;
-    padding: 0.625rem;
-    border: 0.0625rem solid rgb(221, 221, 221); /* Borde alrededor de cada bloque de servicio */
-    border-radius: 0.3125rem; /* Bordes redondeados */
-    background-color: rgb(249, 249, 249); /* Fondo claro para diferenciar cada sección */
-}
-
-.service img {
-    max-width: 18.75rem; /* Ajusta el ancho máximo de las imágenes */
-    margin-right: 1.25rem; /* Espacio entre la imagen y el texto */
-    border-radius: 0.3125rem; /* Bordes redondeados para las imágenes */
-}
-
-.service-text {
-    max-width: calc(100% - 18.75rem); /* Ajusta el ancho del texto para que no se desborde */
-}
-
-.service h3 {
-    margin-top: 0;
-    margin-bottom: 0.625rem;
-    font-size: 1.2rem;
-}
-
-.service p {
+header h1 {
+    font-size: 1.75rem; /* Tamaño del título */
     margin: 0;
-    color: rgb(85, 85, 85);
 }
 
-/* HTML NOSOTROS */
-/* Estilos para la sección "Sobre Nosotros" */
-.about-us {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si el contenedor es más pequeño */
-    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-    margin: 1.25rem 0;
-    padding: 1.25rem;
-    background-color: rgb(242, 242, 242);
-    border-radius: 0.5rem;
-}
-
-.about-us img {
-    flex: 1 1 21.875rem; /* La imagen ocupará al menos 300px, pero puede crecer */
-    max-width: 21.875rem; /* Ancho máximo de la imagen */
-    margin-right: 1.25rem;
-    margin-bottom: 1.25rem; /* Añade un margen inferior para mejorar el espacio en pantallas más pequeñas */
-    border-radius: 0.5rem;
-}
-
-.about-us .service {
-    flex: 2 1 31.25rem; /* El texto ocupará al menos 500px, pero puede crecer */
-    min-width: 18.75rem; /* Ancho mínimo del texto */
-}
-
-.about-us p {
-    margin: 0.625rem 0;
-}
-
-/* HTML LOGUEO */
-.login-container {
-    max-width: 25rem; /* Ancho máximo del contenedor del formulario */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 1.25rem;
-    background-color: rgb(242, 242, 242);
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-
-.login-container h2 {
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-
-.form-group {
-    margin-bottom: 0.9375rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.3125rem;
-    font-weight: bold;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 0.0625rem solid rgb(204, 204, 204);
-    border-radius: 0.25rem;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 0.625rem;
-    background-color: rgb(51, 51, 51);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 0.25rem;
+header p {
     font-size: 1rem;
-    cursor: pointer;
+    margin: 0;
 }
 
-button[type="submit"]:hover {
-    background-color: rgb(85, 85, 85);
+/* Barra de navegación */
+.navbar {
+    background-color: #343a40; /* Fondo oscuro */
+    margin-top: 0;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    padding: 0.625rem 0.9375rem; /* 10px 15px -> 0.625rem 0.9375rem */
+    font-weight: 500;
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.navbar .nav-link:hover {
+    background-color: #495057; /* Fondo gris oscuro al pasar el mouse */
+    color: #f8f9fa !important; /* Texto más claro al pasar el mouse */
+}
+
+.navbar .nav-link.active {
+    background-color: #007bff; /* Color de fondo azul para el enlace activo */
+    color: white !important;
+}
+
+/* Estilos para las secciones principales */
+main {
+    background-color: white; /* Fondo blanco para secciones principales */
+    padding: 1.25rem 0; /* 20px -> 1.25rem */
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1); /* 2px 4px -> 0.125rem 0.25rem */
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+}
+
+/* Estilo de contenedor */
+.container {
+    max-width: 71.25rem; /* 1140px -> 71.25rem */
+    margin: 0 auto;
+    padding: 0 0.9375rem; /* 15px -> 0.9375rem */
+}
+
+/* Estilos para imágenes */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 1.25rem 0; /* 20px -> 1.25rem */
+    clear: both;
+}
+
+/* Estilos para ajustar el padding en dispositivos móviles */
+@media (max-width: 48rem) { /* 768px -> 48rem */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-link {
+        padding: 0.5rem 0.625rem; /* 8px 10px -> 0.5rem 0.625rem */
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-fluid {
+        border-radius: 0.25rem; /* 4px -> 0.25rem */
+    }
+
+    footer {
+        padding: 0.9375rem 0; /* 15px -> 0.9375rem */
+    }
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 30rem) { /* 480px -> 30rem */
+    header img {
+        height: 3.125rem; /* 50px -> 3.125rem */
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Ajuste del tamaño de texto en móviles */
+    }
+
+    .navbar .nav-link {
+        padding: 0.375rem 0.5rem; /* 6px 8px -> 0.375rem 0.5rem */
+    }
+
+    footer {
+        padding: 0.9375rem 0; /* Menos espacio en el footer para móviles */
+    }
+
+    main {
+        padding: 0.9375rem 0.625rem; /* 15px 10px -> 0.9375rem 0.625rem */
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 75rem) { /* 1200px -> 75rem */
+    header h1 {
+        font-size: 2rem; /* Título más grande en pantallas grandes */
+    }
+
+    main {
+        padding: 1.875rem 0; /* 30px -> 1.875rem */
+    }
+
+    .container {
+        padding: 0 1.875rem; /* 30px -> 1.875rem */
+    }
+
+    footer {
+        padding: 1.5625rem 0; /* 25px -> 1.5625rem */
+    }
 }

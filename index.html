@@ -6,62 +6,92 @@
     <meta name="description" content="BUG S.R.L. ofrece servicios de marketing y soluciones empresariales para mejorar tu negocio.">
     <meta name="keywords" content="marketing, soluciones empresariales, servicios, BUG S.R.L.">
     <title>BUG S.R.L.</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vinculación del archivo CSS -->
+    
+    <!-- Vincular Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Vinculación del archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuente Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="img/logobug.jpg" alt="Logo de BUG S.R.L.">
-        <div>
-            <h1>BUG S.R.L.</h1>
-            <p>Expertos en Marketing y Soluciones Empresariales</p>
+    <!-- Header con logo y título -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="img/logobug.jpg" alt="Logo de BUG S.R.L." class="img-fluid" style="height: 70px;">
+            <div>
+                <h1 class="h3 mb-0">BUG S.R.L.</h1>
+                <p class="mb-0">Expertos en Marketing y Soluciones Empresariales</p>
+            </div>
         </div>
     </header>
-    <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./servicios.html">Servicios</a>
-        <a href="./nosotros.html">Sobre Nosotros</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./logueo.html">Iniciar Sesión</a>
-    </nav>
 
-    <main>
-        <aside class="image-slider">
-            <div class="slides">
-                <img src="img/logo1.png" alt="Logo de Empresa 1">
-                <img src="img/logo2.jpg" alt="Logo de Empresa 2">
-                <img src="img/logo3.jpg" alt="Logo de Empresa 3">
-                <img src="img/logo4.avif" alt="Logo de Empresa 4">
-                <img src="img/logo5.png" alt="Logo de Empresa 5">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./logueo.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
             </div>
-        </aside>
-        <section>
-            <h2>Bienvenido a Bug</h2>
-            <p>Ofrecemos una amplia gama de servicios de marketing y soluciones empresariales adaptadas a las necesidades de tu empresa. Nuestro equipo de expertos está aquí para ayudarte a alcanzar tus objetivos comerciales.</p>
-            <p>En nuestra página web, encontrarás información sobre nuestros servicios, nuestro equipo y cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
-        </section>
+        </div>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <main class="container my-4">
+        <div class="row">
+            <aside class="col-md-3 mb-4">
+                <video autoplay muted loop class="img-fluid">
+                    <source src="./video/aside.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </aside>
+            <section class="col-md-9">
+                <h2>Bienvenido a Bug</h2>
+                <p>Ofrecemos una amplia gama de servicios de marketing y soluciones empresariales adaptadas a las necesidades de tu empresa. Nuestro equipo de expertos está aquí para ayudarte a alcanzar tus objetivos comerciales.</p>
+                <p>En nuestra página web, encontrarás información sobre nuestros servicios, nuestro equipo y cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Vsoftware by Ivo Villarruel. Todos los derechos reservados.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 BUG S.R.L. Todos los derechos reservados.</p>
             <p>Contacto: ivovillarruel1994@gmail.com | Teléfono: +3402 458878</p>
         </div>
     </footer>
-    <script>
-        const slides = document.querySelector('.slides');
-        let index = 0;
 
-        function showSlide() {
-            const totalSlides = slides.children.length;
-            slides.style.transform = `translateX(${-index * 100}%)`;
-            index = (index + 1) % totalSlides;
-        }
-
-        setInterval(showSlide, 2000); // Cambia de imagen cada 2 segundos
-    </script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
 
 
 
