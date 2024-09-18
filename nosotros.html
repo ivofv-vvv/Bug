@@ -15,6 +15,9 @@
 
     <!-- Fuente Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
 </head>
 <body>
     <!-- Sección Header -->
@@ -22,8 +25,8 @@
         <div class="container d-flex align-items-center justify-content-between">
             <img src="img/logobug.jpg" alt="Logo de BUG S.R.L." class="img-fluid" style="height: 70px;">
             <div>
-                <h1 class="h3 mb-0">BUG S.R.L.</h1>
-                <p class="mb-0">Expertos en Marketing y Soluciones Empresariales</p>
+                <h1 class="h3 mb-0 animate__animated animate__zoomIn">BUG S.R.L.</h1>
+                <p class="mb-0 animate__animated animate__zoomIn animate__delay-1s">Expertos en Marketing y Soluciones Empresariales</p>
             </div>
         </div>
     </header>
@@ -70,14 +73,37 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 BUG S.R.L. Todos los derechos reservados.</p>
-            <p>Contacto: ivovillarruel1994@gmail.com | Teléfono: +3402 458878</p>
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-6 text-center text-md-left">
+                    <p>&copy; 2024 BUG S.R.L. Todos los derechos reservados.</p>
+                    <p>Contacto: ivovillarruel1994@gmail.com | Teléfono: +3402 458878</p>
+                </div>
+   
+                <!-- Íconos de redes sociales -->
+                <div class="col-md-6 text-center text-md-right">
+                    <p>Síguenos en:</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/instagram.png" alt="Instagram" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/x.png" alt="X (Twitter)" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/facebook.png" alt="Facebook" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/linkeding.png" alt="LinkedIn" style="width: 30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-
 
     <!-- Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
