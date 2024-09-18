@@ -1,0 +1,51 @@
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $margin;
+    color: $text-color;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $text-color;
+  }
+
+  // Estilos para las imágenes fluidas dentro del main
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  // Ajustes para el layout de columnas
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  // Secciones dentro del main (ajustadas según el dispositivo)
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 0 30px;
+    }
+  }
+
+
+
+
+  

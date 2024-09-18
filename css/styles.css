@@ -1,0 +1,123 @@
+@charset "UTF-8";
+header {
+  background-color: #007bff;
+  padding: 1.25rem;
+}
+header img {
+  height: 70px;
+  width: auto;
+}
+header h1 {
+  color: white;
+  font-size: 1.75rem;
+}
+header p {
+  color: white;
+}
+
+.navbar {
+  background-color: #007bff;
+  margin-top: 0;
+}
+.navbar .nav-link {
+  color: white !important;
+  padding: 10px 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+  background-color: #0062cc;
+  color: #f8f9fa !important;
+}
+.navbar .nav-link.active {
+  background-color: #007bff;
+}
+
+.full-width-map {
+  width: 100%;
+  margin: 0; /* Elimina márgenes */
+  padding: 0;
+}
+
+.map-info {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-info h2 {
+  font-size: 2rem;
+}
+
+.map-info p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  /* Estilos para la información de contacto */
+  /* Estilos para los íconos de redes sociales */
+}
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .text-center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .text-center {
+    text-align: left;
+  }
+}
+footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer .social-icons a img {
+  width: 30px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+footer .social-icons a:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+@media (max-width: 768px) {
+  footer .social-icons {
+    justify-content: flex-end;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

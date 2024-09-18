@@ -15,21 +15,26 @@
 
     <!-- Fuente Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+        <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
-    <!-- Header con logo y título -->
+
+    <!-- Sección Header -->
     <header class="bg-dark text-white py-3">
         <div class="container d-flex align-items-center justify-content-between">
             <img src="img/logobug.jpg" alt="Logo de BUG S.R.L." class="img-fluid" style="height: 70px;">
-            <div>
+            <div class="header-text">
                 <h1 class="h3 mb-0">BUG S.R.L.</h1>
                 <p class="mb-0">Expertos en Marketing y Soluciones Empresariales</p>
             </div>
         </div>
     </header>
-
+  
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Primary navigation">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,27 +62,65 @@
     </nav>
     
     <!-- Contenido principal -->
-    <main class="container my-4">
+    <main class="my-4">
         <div class="row">
             <aside class="col-md-3 mb-4">
-                <video autoplay muted loop class="img-fluid">
+                <video autoplay muted loop class="img-fluid" loading="lazy">
                     <source src="./video/aside.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </aside>
             <section class="col-md-9">
                 <h2>Bienvenido a Bug</h2>
-                <p>Ofrecemos una amplia gama de servicios de marketing y soluciones empresariales adaptadas a las necesidades de tu empresa. Nuestro equipo de expertos está aquí para ayudarte a alcanzar tus objetivos comerciales.</p>
-                <p>En nuestra página web, encontrarás información sobre nuestros servicios, nuestro equipo y cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
+                <p>BUG S.R.L. es una empresa dedicada a proporcionar soluciones empresariales y servicios de marketing que impulsan a las empresas a alcanzar sus metas comerciales. Con años de experiencia en el sector, contamos con un equipo de profesionales altamente capacitados para diseñar y ejecutar estrategias a medida para cada cliente.</p>
+                <p>Nos especializamos en diversas áreas, desde la consultoría en marketing digital hasta la automatización de procesos empresariales. Nos comprometemos a ofrecer resultados tangibles y ayudar a nuestros clientes a superar sus desafíos comerciales.</p>
+                <p>Vamos a colaborar!!!</p>
             </section>
         </div>
     </main>
+<!-- Sección de Mapa -->
+<!-- Sección de Mapa con Ubicación -->
+<section class="full-width-map">
+    <div class="map-info text-center py-4">
+        <h2 class="mb-3" class>Visítanos en nuestra oficina principal</h2>
+        <p class="lead">Estamos ubicados en el corazón de San Francisco, brindando soluciones empresariales de alto nivel. ¡Ven y conoce cómo podemos ayudarte a alcanzar tus metas!</p>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345077375!2d-122.41941548468137!3d37.77492927975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581fd6d8f1b0b%3A0xf9e7e9c2e0b7cb96!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1605905036199!5m2!1sen!2sus" 
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</section>
 
-    <!-- Footer -->
+
+    <!-- footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 BUG S.R.L. Todos los derechos reservados.</p>
-            <p>Contacto: ivovillarruel1994@gmail.com | Teléfono: +3402 458878</p>
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-6 text-center text-md-left">
+                    <p>&copy; 2024 BUG S.R.L. Todos los derechos reservados.</p>
+                    <p>Contacto: ivovillarruel1994@gmail.com | Teléfono: +3402 458878</p>
+                </div>
+   
+                <!-- Íconos de redes sociales -->
+                <div class="col-md-6 text-center text-md-right">
+                    <p>Síguenos en:</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/instagram.png" alt="Instagram" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/x.png" alt="X (Twitter)" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/facebook.png" alt="Facebook" style="width: 30px; margin-right: 10px;">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/linkeding.png" alt="LinkedIn" style="width: 30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -86,6 +129,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
