@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BUG S.R.L. ofrece servicios de marketing y soluciones empresariales para mejorar tu negocio.">
     <meta name="keywords" content="marketing, soluciones empresariales, servicios, BUG S.R.L.">
-    <title>Logueo - BUG S.R.L.</title>
+    <title>BUG S.R.L.</title>
     
     <!-- Vincular Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -15,9 +15,9 @@
 
     <!-- Fuente Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-    <!-- animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>   
 
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
 </head>
 <body>
     <!-- Sección Header -->
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <!-- Barra de navegación (NavBar) -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,41 +39,39 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="./nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./logueo.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./logueo.html">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
+
+    <!-- Contenido Principal -->
     <main class="container my-5">
         <section>
-            <div class="login-container mx-auto" style="max-width: 400px;">
-                <form action="procesar_login.php" method="POST" class="bg-light p-4 border rounded shadow text-dark">
-                    <h2 class="text-center mb-3">Iniciar Sesión</h2>
-                    <div class="form-group">
-                        <label for="username">Usuario:</label>
-                        <input type="text" id="username" name="username" required autocomplete="username" class="form-control">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <div class="row">
+                <!-- Imagen representativa del equipo -->
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="../img/equipo.jpg" alt="Equipo de trabajo de BUG S.R.L." class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <p class="card-text">Nuestro equipo de expertos trabajando para ofrecerte las mejores soluciones de marketing y consultoría empresarial.</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required autocomplete="current-password" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-                </form>
+                </div>
+                <!-- Información sobre la empresa -->
+                <div class="col-md-6">
+                    <p>En <strong>BUG S.R.L.</strong> nos dedicamos a brindar soluciones de marketing y asesoramiento empresarial. Nuestro equipo de expertos está comprometido en ayudar a las empresas a crecer y alcanzar sus objetivos a través de estrategias personalizadas y efectivas.</p>
+                    <p>Nuestra misión es proporcionar servicios de alta calidad que impulsen el éxito de nuestros clientes. Creemos en la innovación, la colaboración y la transparencia como pilares fundamentales para construir relaciones duraderas y exitosas.</p>
+                    <p>Con una amplia experiencia en el mercado, ofrecemos una variedad de servicios, incluyendo consultoría en marketing, gestión de redes sociales, desarrollo web y publicidad digital.</p>
+                </div>
             </div>
         </section>
-        <!-- Additional content for desktop that will be hidden on mobile -->
-        <div class="row d-none d-md-block">
-            <div class="col-md-12 mt-5">
-                <h3 class="text-center">Bienvenido de nuevo a BUG S.R.L.</h3>
-                <p class="text-center">Nuestra plataforma en línea te permite gestionar eficazmente tus servicios de marketing y comunicarte con nuestros especialistas.</p>
-            </div>
-        </div>
     </main>
 
     <!-- footer -->
@@ -91,16 +89,16 @@
                     <p>Síguenos en:</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/instagram.png" alt="Instagram" style="width: 30px; margin-right: 10px;">
+                            <img src="../img/instagram.png" alt="Instagram" style="width: 30px; margin-right: 10px;">
                         </a>
                         <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/x.png" alt="X (Twitter)" style="width: 30px; margin-right: 10px;">
+                            <img src="../img/x.png" alt="X (Twitter)" style="width: 30px; margin-right: 10px;">
                         </a>
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/facebook.png" alt="Facebook" style="width: 30px; margin-right: 10px;">
+                            <img src="../img/facebook.png" alt="Facebook" style="width: 30px; margin-right: 10px;">
                         </a>
                         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/linkeding.png" alt="LinkedIn" style="width: 30px;">
+                            <img src="../img/linkeding.png" alt="LinkedIn" style="width: 30px;">
                         </a>
                     </div>
                 </div>
@@ -108,10 +106,12 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
 

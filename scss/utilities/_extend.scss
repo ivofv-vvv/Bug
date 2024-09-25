@@ -1,0 +1,15 @@
+
+// _extend.scss
+
+// Ejemplo de uso de @extend para botones
+.button {
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: none;
+}
+
+.btn-primary {
+  @extend .button;
+  background-color: $accent-color;
+}

@@ -1,6 +1,11 @@
-// Archivo main.scss
-@import 'variables';
-@import 'header';
-@import 'navbar';
-@import 'section';
-@import 'footer';
+// Importar las utilidades
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/mq';
+@import 'utilities/extend';
+
+// Importar los layouts
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navbar';
+@import 'layout/section';
