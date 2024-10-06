@@ -1,0 +1,28 @@
+// _footer.scss
+
+/* Alinear texto e íconos al centro en mobile y a la izquierda en desktop */
+footer .col-md-6.text-center.text-md-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar en mobile */
+  
+    @media (min-width: 1024px) {
+      flex-direction: row; /* Alinear en fila en desktop */
+      align-items: center;
+      justify-content: flex-start; /* Alinear a la izquierda en desktop */
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Espaciado entre íconos */
+    margin-top: 10px; /* Separar íconos del texto "Síguenos en:" */
+  
+    @media (min-width: 1024px) {
+      margin-left: 10px; /* Añadir margen entre texto e íconos en desktop */
+      margin-top: 0; /* Quitar el margen superior en desktop */
+    }
+  }
+  
+  
+
